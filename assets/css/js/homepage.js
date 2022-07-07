@@ -13,7 +13,7 @@ const searchInput = document.querySelector("[data-search]")
 
 let city = []
 
-searchButtonEl.addEventListener("click", then () {
+searchButtonEl.addEventListener("click", then {
   city.forEach (city => {
     const isVisible = 
     city.name.toLowerCase().inclues(value)
@@ -22,7 +22,7 @@ searchButtonEl.addEventListener("click", then () {
 })
 
 //need a form input for cityName
-fetch ('http://api.openweathermap.org/geo/1.0/direct?q=Richmond&limit=1&appid=cf30aa7d4098c837bc982a675f853adc')
+fetch ('http://api.openweathermap.org/geo/1.0/direct?q=' + city + '&limit=1&appid=cf30aa7d4098c837bc982a675f853adc')
   .then(res => res.json())
   .then(city => {})
     city = city.map(city => {
@@ -41,7 +41,7 @@ searchButtonEl.addEventListener("click", function () {
 
 //then we need to add the lat and long to the fetch to search openweathermap for the day's weather
 searchButtonEl.addEventListener("click", function () {
-  fetch('https://api.openweathermap.org/data/2.5/weather?lat=37.5407&lon=77.4360&appid=cf30aa7d4098c837bc982a675f853adc');
+  fetch('https://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon '&appid=cf30aa7d4098c837bc982a675f853adc');
 })
       /*    
           //DOM
