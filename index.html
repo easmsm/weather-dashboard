@@ -20,59 +20,61 @@
     <!-- search for a new city -->
 
     <main class="flex-row justify-space-between justify-flex-start">
-        <div class="col-12 col-md-4">
-          <div class="search-wrapper card-body flex-row">
-          <h3 class="form-label">Search for a City</h3>
-          <div> <input type="search" id="search" data-search /></div>
+        <div class="container">
+          <form>
+            <div class="search-wrapper card-body flex-row">
+          <h3>Search for a City</h3>
+          <input type="search" id="search" data-search />
           <button class="btn" id="search">Search</button>
+         </form>
         </div>
      
          <div class="card-body" data-city-cards-container></div>
 
           <!-- Template -->
-          <div>
+          <div class="container">
             <template data-card-template>
               <div class="card card-body">
                 <div class="header" data-city>City Name</div>
               </template>
 
         <!-- list of previous searched for cities -->
-              <div class="flex-row justify-flex-start"></div>
+              <div class="container"></div>
 
         <!-- City Dashboard Side -->
-        <div class="col-12 col-md-8 flex-row justify-flex-end">
-          <h3 class="card-header text-uppercase">City Name</h3>
-          <p id="current_date"></p>
-          <div class="card card-body">
+        <div class="container">
+          <h3>City Name</h3>
+          <div id="current_date"></div>
+          <!--<div class="card card-body">
             <p class="name"></p>
             <p class="currentDay"></p>
             <p class="temp"></p>
             <p class="wind"></p>
             <p class="humidity"></p>
             <p class="uvIndex"></p>
-          </div>
+          </div>-->
         </div>
        
         <!-- 5 Day Forecast -->
-        <div class="container flex-row justify-flex-end">
-            <h2 class="subtitle">5-Day Forecast:</h2>
+        <div class="container">
+            <h2>5-Day Forecast:</h2>
             <div class="row col-10">
               <div class="container">
-                <p class="col-2 card card-body-week">
+                <div class="col-2 card card-body-week">
                  Day 1
-                </p>
-                <p class="col-2 card card-body-week">
+                </div>
+                <div class="col-2 card card-body-week">
                   Day 2
-                </p>
-                <p class="col-2 card card-body-week">
+                </div>
+                <div class="col-2 card card-body-week">
                   Day 3
-                </p>
-                <p class="col-2 card card-body-week">
+                </div>
+                <div class="col-2 card card-body-week">
                   Day 4
-                </p>
-                <p class="col-2 card card-body-week">
+                </div>
+                <div class="col-2 card card-body-week">
                   Day 5
-                </p>
+                </div>
               </div>
             </div>
             </div>
