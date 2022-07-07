@@ -6,7 +6,6 @@
   --tertiary: #03022b;
   --light-dark: gray;
   --dark: black;
-  /*--border-radius: .3rem;*/
 }
 
 * {
@@ -24,7 +23,7 @@ body {
 }
 
 main {
-  margin: 20px auto;
+  margin: 10px auto;
   width: 94%;
 }
 
@@ -39,28 +38,27 @@ p {
   width: 100%;
   display: block;
   margin: 5px 0;
-  /*border-radius: var(--border-radius);*/
   color: var(--primary);
   border: none;
   outline: none;
   background-color: #07caf9;
-  /* box-shadow: 3px 3px var(--dark);
-  transform: translate(-1px, -1px);*/
 }
 
 .hero {
   padding: 3% 4%;
   background: rgb(2,0,36);
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  /*background: linear-gradient(90deg, rgba(0,212,255,1) 100%, rgba(9,9,121,1) 35%, rgba(2,0,36,1) 0%);*/
   color: var(--primary);
-  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 .app-title {
   font-size: 3rem;
   color: var(--primary);
   padding: 0 10px;
-  display: inline-flex;
+  display: flex;
   align-items: center;
 } 
 
@@ -79,22 +77,9 @@ p {
   background-color: var(--tertiary);
   color: var(--primary);
   width: 20%;
+  display: flex;
+  align-items: center;
 }
-
-/* HEIGHT / WIDTH UTILS */
-.min-100-vh {
-  min-height: 100vh;
-}
-
-.min-100-vw {
-  min-width: 100vw;
-}
-
-/* FONT UTILS */
-.text-uppercase {
-  text-transform: uppercase;
-}
-
 
 /* FLEX CONTENT */
 .flex-row {
